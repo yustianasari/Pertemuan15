@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+//membuat kelas motor
+
+struct MOTOR
+{
+    string merk;
+    long tahun;
+    string nopolisi;
+    string warna;
+};
+MOTOR Yamaha;
+
+void setmotor() {
+    cout<<"Merk : ";
+    cin>> Yamaha.merk;
+    cout<<"Tahun : ";
+    cin>> Yamaha.tahun;
+    cout<<"No Polisi : ";
+    cin>> Yamaha.nopolisi;
+    cout<<"Warna : ";
+    cin>> Yamaha.warna;
+    }
+
+void showinfomotor(){
+
+        cout<<"----------------------------"<<endl;
+        cout<<"Merk : "<<Yamaha.merk<<endl;
+        cout<<"Tahun : "<<Yamaha.tahun<<endl;
+        cout<<"No Polisi : "<<Yamaha.nopolisi<<endl;
+        cout<<"Warna : "<<Yamaha.warna<<endl;
+        }
+//fungsi utama
+
+int main() {
+//melakukan instalasi terhadap kelas MOTOT
+
+MOTOR M;
+
+setmotor();
+showinfomotor();
+
+return 0;
+}
+
+
+
+

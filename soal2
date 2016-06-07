@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+struct datamahasiswa
+{
+    float nim;
+    string nama;
+    float tlp;
+    int tugas;
+    int uts;
+    int uas;
+    int quis;
+    float hasil;
+};
+datamahasiswa Yusti;
+
+void inputdata()
+{
+    cout<<"NIM      = ";
+    cin>> Yusti.nim;
+    cout<<"Nama     = ";
+    cin>> Yusti.nama;
+    cout<< "No telepon  = ";
+    cin>> Yusti.tlp;
+    cout<<"Nilai Tugas  =";
+    cin>> Yusti.tugas;
+    cout<<"Nilai UTS  =";
+    cin>> Yusti.uts;
+    cout<<"Nilai UAS  =";
+    cin>> Yusti.uas;
+    cout<<"Nilai quiz =";
+    cin>>Yusti.quis;
+}
+
+void tampildata()
+{
+    cout<<"NIM      = "<<Yusti.nim<<endl;
+    cout<<"Nama     = "<<Yusti.nama<<endl;
+    cout<< "No telepon  = "<<Yusti.tlp<<endl;
+    cout<<"Nilai Tugas  ="<<Yusti.tugas<<endl;
+    cout<<"Nilai UTS  ="<<Yusti.uts<<endl;
+    cout<<"Nilai UAS  ="<<Yusti.uas<<endl;
+    cout<<"Nilai quiz ="<<Yusti.quis<<endl;
+}
+
+void hitungnilaiakhir()
+{
+   Yusti.hasil =0.5*Yusti.uas +0.25*Yusti.uts + 0.3*Yusti.tugas + 0,2*Yusti.quis;
+   cout<<"hasil akhir = "<< Yusti.hasil;
+}
+int main() {
+//melakukan instalasi terhadap kelas MOTOT
+
+datamahasiswa Yusti;
+
+void inputdata();
+void tampildata();
+void hitungnilaiakhir();
+
+return 0;
+}
